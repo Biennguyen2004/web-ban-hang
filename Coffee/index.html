@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- top header -->
+    <section id="top-header">
+        <div class="location">
+            <a href="index.html"><i class="fa-solid fa-location-dot"></i></a>
+            <a href="index.html">
+                <p>11 Cửa hàng trên ở Hà Nội </p>
+            </a>
+        </div>
+
+        <div class="location">
+            <a href="index.html"><i class="fa-solid fa-phone"></i></i></a>
+            <a href="index.html">
+                <p>Đặt hàng: 0383262894</p>
+            </a>
+        </div>
+    </section>
+    <!-- header -->
+    <section id="header">
+        <a href="index.html"><img src="" class="logo" alt="">Accessories Shop</a>
+        <div>
+            <ul id="navbar">
+                <div class="search-input">
+                    <input type="text" placeholder="Search..." name="text" class="input">
+                    <button type="submit">Search</button>
+                </div>
+                <li><a class="active" href="index.html">Home</a></li>
+                
+                <li>
+                    <a href=".">Menu</a>
+                    <ul class="sub-menu">
+                        <li><a href="nhan.html">Nhẫn</a></li>
+                        <li><a href="thatlung.html">Thắt Lưng</a></li>
+                        <li><a href="nuochoa.html">Nước Hoa</a></li>
+                        <li><a href="dongho.html">Đồng Hồ</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- banner -->
+    <section id="bannerr">
+        <!-- <div class="carousel">
+            <div class="carousel-buttons">
+                <button class="carousel-button carousel-button_previous" data-carousel-button-previous>
+                    <span class="fas fa-chevron-circle-left"></span>
+                </button>
+                <button class="carousel-button carousel-button_next" data-carousel-button-next>
+                    <span class="fas fa-chevron-circle-right"></span>
+                </button>
+            </div>
+            <div class="slides" data-carousel-slides-container>
+                <div class="slide">
+                    <img src="ascess/img/Đồng hồ.png" alt="Quảng cáo 1">
+                </div>
+                <div class="slide">
+                    <img src="ascess/img/Nhẫn.png" alt="Quảng cáo 2">
+                </div>
+                <div class="slide">
+                    <img src="ascess/img/Nước hoa.png" alt="Quảng cáo 3">
+                </div>
+                <div class="slide">
+                    <img src="ascess/img/thắt lưng.png" alt="Quảng cáo 4">
+                </div>
+            </div>
+        </div> -->
+        <div class="carousel">
+            <div class="carousel-buttons">
+                <button class="carousel-button carousel-button_previous" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="carousel-button carousel-button_next" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+            <div class="slides" data-carousel-slides-container>
+                <a href="nhan.html">
+                    <img class="mySlides" src="accser/img/nhan.jpg"Quảng cáo 1">
+                </a>
+                <a href="nuochoa.html">
+                    <img class="mySlides" src="accser/img/nuochoa.jpg" alt="Quảng cáo 2">
+                </a>
+                <a href="dongho.html">
+                    <img class="mySlides" src="accser/img/Dongho.jpg" alt="Quảng cáo 3">
+                </a>
+                <a href="thatlung.html">
+                    <img class="mySlides" src="accser/img/thatlung.jpg" alt="Quảng cáo 4">
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- home -->
+    <section id="home-coffee">
+        <div class="coffee-container">
+            <div class="freeship">
+                <a href="index.html"><img
+                    src="accser/img/anhvv.jpg"
+                    alt="">
+                </a>
+            </div>
+            <div class="Cloudfee">
+                <div class="Introduction">
+                    <a href="dongho.html" >
+                        <img src="accser/img/dongho (1).png" alt="Image 1">
+                    </a>
+                    <a href="dongho.html">
+                        <img src="accser/img/dongho (2).png" alt="Image 2">
+                    </a>
+                    <a href="dongho.html">
+                        <img src="accser/img/dongho (3).png" alt="Image 3">
+                    </a>
+                    <a href="dongho.html">
+                        <img src="accser/img/dongho (4).png" alt="Image 4">
+                    </a>
+                    
+                </div>
+                <div class="des">
+                    <span>Đồng Hồ Nam
+                        <br>
+                        - Chúng tôi cung cấp đồng hồ nam với chất liệu và thiết kế cao cấp, mang đến sự sang trọng và đẳng cấp cho người đeo.<br>
+                        - Đồng hồ nam của chúng tôi được làm từ các vật liệu chất lượng, đảm bảo độ bền và độ chính xác trong từng chi tiết.<br>
+                        - Đồng hồ nam của chúng tôi được bảo hành trọn đời, bao gồm việc đánh bóng làm mới hoặc sửa chữa trong trường hợp cần thiết.<br>
+                        - Đồng hồ nam là biểu tượng của sự lịch lãm, tinh tế và phong cách cho những quý ông đẳng cấp và tự tin.<br>
+                    </span>
+                </div>
+            </div>   
+            <!-- <div class="Cloudfee">
+                <img src="https://product.hstatic.net/1000075078/product/1697442235_cloudfee-hanh-nhan-nuong_8282f6c2cf4d49bba2dfbe70cb7dbede_large.jpg"
+                    alt="">
+                <div class="des">
+                    <span>CloudFee Hạnh Nhân Nướng</span>
+                </div>
+
+                <div class="price">
+                    <p>49.000đ</p>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div> -->
+            <!-- The Coffee House Sữa Đá -->
+            <div class="Cloudfee">
+                <div class="Introduction">
+                    <img src="accser/img/nhan (1).png" alt="Image 1">
+                    <img src="accser/img/nhan (2).png" alt="Image 2">
+                    <img src="accser/img/nhan (3).png" alt="Image 3">
+                    <img src="accser/img/nhan (4).png" alt="Image 4">
+                </div>
+                <div class="des">
+                    <span>Nhẫn Nam
+                        <br>- Khắc tên và số hoàn toàn miễn phí trong lòng nhẫn <br>
+                        - Chất liệu bạc cao cấp 925 ( gồm 92,5% bạc nguyên chất, phần còn lại là hợp chất làm tăng độ cứng và sáng bóng cho bạc) <br>
+                        - Thay màu đá theo mệnh hoàn toàn miễn phí<br>
+                        - Nhẫn bạc nam đẹp cao cấp được bảo hành trọn đời đánh bóng làm mới hoặc gắn lại đá do va chạm mạnh<br>
+                        - Thời gian shop làm nhẫn theo size tay 3 đến 4 ngày<br>
+                        - Shop cam kết đúng mẫu mã và chất lượng sản phẩm<br>
+                        - Giao hàng toàn quốc và thanh toán tại nhà khi nhận được hàng. <br>
+                    </span>
+                </div>
+
+                <!-- <div class="price">
+                    <p>39.000đ</p>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div> -->
+            </div>
+            <!-- Hi-Tea Vải -->
+            <div class="Cloudfee">
+                <div class="Introduction">
+                    <img src="accser/img/nhan (1).png" alt="Image 1">
+                    <img src="accser/img/nhan (2).png" alt="Image 2">
+                    <img src="accser/img/nhan (3).png" alt="Image 3">
+                    <img src="accser/img/nhan (4).png" alt="Image 4">
+                </div>
+                <div class="des">
+                    <span>Nước Hoa Nam
+                        <br>- Nước hoa nam Aventus Creed: Nam tính, sang trọng, tự tin.<br>
+                        - Nước hoa nam Bleu de Chanel: Tinh tế, nam tính, lịch lãm.<br>
+                        - Nước hoa nam Dior Sauvage: Hoang dã, mạnh mẽ, cuốn hút.<br>
+                        - Nước hoa nam Acqua di Gio Giorgio Armani: Tươi mát, năng động, tự tin.<br>
+                        - Nước hoa nam Versace Eros: Gợi cảm, quyến rũ, đam mê.<br>
+                    </span>
+                </div>
+            </div>
+            <!-- Cà Phê Sữa Đá -->
+            <div class="Cloudfee">
+                <div class="Introduction">
+                    <img src="accser/img/dongho (1).png" alt="Image 1">
+                    <img src="accser/img/dongho (2).png" alt="Image 2">
+                    <img src="accser/img/dongho (3).png" alt="Image 3">
+                    <img src="accser/img/dongho (4).png" alt="Image 4">
+                </div>
+                <div class="des">
+                    <span>Thắt Lưng <br>
+                        - Thắt lưng nam: phụ kiện không thể thiếu của phong cách. <br>
+                        - Chất liệu đa dạng, kiểu dáng từ cổ điển đến hiện đại.<br>
+                        - Biểu tượng của sự lịch lãm và tự tin.<br>
+                        - Đa dạng từ xa xỉ đến giá cả phải chăng.<br>
+                        - Sang trọng, tiện lợi, là điểm nhấn hoàn hảo.<br>
+                    </span>
+                </div>
+            </div>
+            <!-- CloudTea Oolong Berry -->
+            <div class="Cloudfee">
+                <div class="Introduction">
+                    <img src="accser/img/dongho (1).png" alt="Image 1">
+                    <img src="accser/img/dongho (2).png" alt="Image 2">
+                    <img src="accser/img/dongho (3).png" alt="Image 3">
+                    <img src="accser/img/dongho (4).png" alt="Image 4">
+                </div>
+                <div class="des">
+                    <span>Nước hoa nữ
+                        <br>- Nước hoa nữ: điểm nhấn không thể thiếu của phong cách.<br>
+                        - Chất liệu đa dạng, từ hoa quả tươi sáng đến gỗ hương ấm áp.<br>
+                        - Biểu tượng của sự nữ tính và quyến rũ.<br>
+                        - Đa dạng từ nhãn hiệu xa xỉ đến sản phẩm phổ thông.<br>
+                        - Tinh tế, gợi cảm, là điểm nhấn hoàn hảo cho phụ nữ.<br>
+                    </span>
+                </div>
+            </div>
+            <!-- CloudTea Trà Xanh Tây Bắc -->
+            <div class="Cloudfee">
+                <div class="Introduction">
+                    <img src="accser/img/nhan (1).png" alt="Image 1">
+                    <img src="accser/img/nhan (2).png" alt="Image 2">
+                    <img src="accser/img/nhan (3).png" alt="Image 3">
+                    <img src="accser/img/nhan (4).png" alt="Image 4">
+                </div>
+                <div class="des">
+                    <span>Đồng hồ nữ
+                        <br>- Đồng hồ nữ: phụ kiện không thể thiếu của phong cách.<br>
+                        - Chất liệu đa dạng từ thép không gỉ đến da mềm mại.<br>
+                        - Biểu tượng của sự thanh lịch và tinh tế.<br>
+                        - Đa dạng từ các thương hiệu xa xỉ đến phổ thông.<br>
+                        - Sang trọng, đẳng cấp, là điểm nhấn hoàn hảo.<br>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+    <footer>
+        <p>Copyright by Phụ Kiện Nam Nữ® Since 1991</p>
+        <p>GPDKKD Số: 0315667679 do Sở KH & ĐT TP.HN cấp ngày: 22/08/1992</p>
+        <p>Góp ý & Khiếu nại: <a href="mailto:ceo@phukiennamnu.com">ceo@phukiennamnu.com</a></p>
+    </footer>
+</body>
+
+</html>
