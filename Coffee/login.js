@@ -10,6 +10,44 @@ signInButton.addEventListener("click", () => {
 	container.classList.remove("right-panel-active");
 });
 
+const EmailLogin = document.querySelector(".input-signin-username");
+const PassswordLogin = document.querySelector(".input-signin-passwprd");
+const btnLogin = document.querySelector(".btnsignIn");
+
+btnLogin.addEventListener("click", function(e) {
+    e.preventDefault();
+    if (EmailLogin.value === "" || PassswordLogin.value === "") {
+        alert("Please enter Email and Password");
+    } else {
+        const user = JSON.parse(localStorage.getItem(EmailLogin.value));
+        if (user && user.password === PassswordLogin.value) {
+            window.open("index.html");
+        } else {
+            alert("Invalid email or password");
+        }
+    }
+});
+
+const NameRegister = document.querySelector(".namme");
+const EmailRegister = document.querySelector(".input-signup-username");
+const PasswordRegister = document.querySelector(".input-signup-password");
+const btnRegister = document.querySelector(".btnsignUp");
+
+btnRegister.addEventListener("click", function(e) {
+    e.preventDefault();
+    if (EmailRegister.value === "" || PasswordRegister.value === "" || NameRegister.value === "") {
+        alert("Please enter Name, Email, and Password");
+    } else {
+        const user = {
+            name: NameRegister.value,
+            username: EmailRegister.value,
+            password: PasswordRegister.value
+        };
+        let json = JSON.stringify(user);
+        localStorage.setItem(EmailRegister.value, json);
+        window.location.href = "login.html";
+    }
+});
 // // login
 // const EmailLogin = document.querySelector(".input-signin-username");
 // const PassswordLogin = document.querySelector(".input-signin-passwprd");
@@ -89,44 +127,7 @@ signInButton.addEventListener("click", () => {
 	
 // })
 // login
-const EmailLogin = document.querySelector(".input-signin-username");
-const PassswordLogin = document.querySelector(".input-signin-passwprd");
-const btnLogin = document.querySelector(".btnsignIn");
 
-btnLogin.addEventListener("click", function(e) {
-    e.preventDefault();
-    if (EmailLogin.value === "" || PassswordLogin.value === "") {
-        alert("Please enter Email and Password");
-    } else {
-        const user = JSON.parse(localStorage.getItem(EmailLogin.value));
-        if (user && user.password === PassswordLogin.value) {
-            window.open("index.html");
-        } else {
-            alert("Invalid email or password");
-        }
-    }
-});
-
-const NameRegister = document.querySelector(".namme");
-const EmailRegister = document.querySelector(".input-signup-username");
-const PasswordRegister = document.querySelector(".input-signup-password");
-const btnRegister = document.querySelector(".btnsignUp");
-
-btnRegister.addEventListener("click", function(e) {
-    e.preventDefault();
-    if (EmailRegister.value === "" || PasswordRegister.value === "" || NameRegister.value === "") {
-        alert("Please enter Name, Email, and Password");
-    } else {
-        const user = {
-            name: NameRegister.value,
-            username: EmailRegister.value,
-            password: PasswordRegister.value
-        };
-        let json = JSON.stringify(user);
-        localStorage.setItem(EmailRegister.value, json);
-        window.location.href = "login.html";
-    }
-});
 
 
 

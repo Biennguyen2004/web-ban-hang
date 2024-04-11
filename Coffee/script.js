@@ -118,6 +118,10 @@ var mid = arr_length / 2;
 
 
 
+
+
+
+
 var slideIndex = 1;
 showDivs(slideIndex);
 

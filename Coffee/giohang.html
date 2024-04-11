@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories Shop</title>
+    <link rel="stylesheet" href="giohang.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Accessories Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="checkout">
+        <div class="container">
+            <div class="checkout-container">
+                <h2>Check Out</h2>
+                <form id="payment-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea><br><br>
+                    <div id="cart-item">
+                        <!-- Hiển thị thông tin sản phẩm đã được thêm vào giỏ hàng -->
+                        <img src="" id="product-image" alt="">
+                        <h3 id="product-name"></h3>
+                        <p id="product-price"></p>
+                    </div>
+                    
+                    <!-- Bảng chứa thông tin sản phẩm -->
+                    <table id="cart-table">
+                        <thead>
+                            <tr>
+                                <th>Sản phẩm</th>
+                                <th>Số lượng</th>
+                                <th>Giá</th>
+                                <th>Xóa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Các sản phẩm trong giỏ hàng sẽ được thêm vào đây -->
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3" id="total-price">Tổng giá: 0đ</td>
+                                <td></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    
+                    <button type="submit">Pay Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section contact">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>Address: Hà Nội</li>
+                        <li>Phone: 0383262894</li>
+                        <li>Email: biennguyen0304@gmail.com</li>
+                        <li>Facebook: Nguyen Bien</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section support">
+                    <h4>Customer Support</h4>
+                    <ul>
+                        <li>FAQs &amp; Help</li>
+                        <li>Payment and Refund Guide</li>
+                        <li>Return/Refund Policy</li>
+                        <li>Check Order Status</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>Accessories Shop mang đến cho quý khách sự uy tín chất lượng</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="giohang.js"></script>
+</body>
+</html>
